@@ -36,7 +36,7 @@ Then, we execute workload in the following different mode:
 cd /share/nodejs-gramine
 
 # Native execution
-nodejs /share/nodejs-gramine/benchmarks/xxx.js.
+nodejs /share/nodejs-gramine/benchmarks/xxx.js
 
 # Gramine-direct execution (w/o SGX enclave)
 gramine-direct nodejs /share/nodejs-gramine/benchmarks/xxx.js
