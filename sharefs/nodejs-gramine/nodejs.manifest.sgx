@@ -26,11 +26,11 @@ mounts = [
 enclave_size = "2G"
 max_threads = 32
 edmm_enable = false
-debug = true
 enable_stats = true
 isvprodid = 0
 isvsvn = 0
 remote_attestation = "none"
+debug = false
 use_exinfo = false
 
 [[sgx.trusted_files]]
@@ -17355,14 +17355,11 @@ sha256 = "96853839a722706bfeb030fd73fdb4ce42a43230a465ee110613123996c6be1b"
 
 [[sgx.trusted_files]]
 uri = "file:/share/nodejs-gramine/nodejs.manifest"
-sha256 = "1c6f50cc436d9f509e8e7dbbbaa429b45aa6523c38fb994b97bdefd17c39c3ae"
+sha256 = "d5935c77818616c4598550bd41e69d2e237aecb4e58ed33c9d5aa52cc14c3b11"
 
 [[sgx.trusted_files]]
 uri = "file:/share/nodejs-gramine/nodejs.manifest.template"
-sha256 = "9be9f456250d090ec7ddeb7761b5729972587f215dc86840ceb8cb92e2488889"
-
-[sgx.profile]
-enable = "all"
+sha256 = "f8fc54969fbca505fb573b68d2149576af18a15191523fb7249961b9a1ca843c"
 
 [sgx.cpu_features]
 avx = "unspecified"
