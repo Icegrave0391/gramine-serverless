@@ -34,10 +34,12 @@ Then, we execute workload in the following different mode:
 
 ```bash
 cd /share/nodejs-gramine
+# Native execution
+nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
+# Gramine-direct execution (w/o SGX enclave)
+gramine-direct nodejs /share/nodejs-gramine/benchmarks/xxx.js
+# Gramine-sgx execution (w/ SGX enclave)
+gramine-sgx nodejs /share/nodejs-gramine/benchmarks/xxx.js
 ```
-
-+ Native: `nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
-+ gramine-direct: `gramine-direct nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
-+ gramine-sgx: `gramine-sgx nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
 
 **Note:** Please use the absoluate path of `/share/nodejs-gramine/benchmarks/xxx.js` inside container for `gramine` to execute the js workloads.
