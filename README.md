@@ -20,4 +20,24 @@ After this, a prompt inside the container environment at `/share` will pop up.
 
 3. Execute workloads.
 
-Inside the container, please enter `/share/nodejs-gramine`. Then, refer to [sharefs/nodejs-gramine](sharefs/nodejs-gramine).
+Inside the container, please enter `/share/nodejs-gramine`. 
+
+**Build gramine-enabled nodejs.**
+First, we build the manifest of gramine libOS-enabled nodejs.
+```bash
+cd /share/nodejs-gramine
+./build-all.sh
+```
+
+**Execute workload.**
+Then, we execute workload in the following different mode:
+
+```bash
+cd /share/nodejs-gramine
+```
+
++ Native: `nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
++ gramine-direct: `gramine-direct nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
++ gramine-sgx: `gramine-sgx nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
+
+**Note:** Please use the absoluate path of `/share/nodejs-gramine/benchmarks/xxx.js` for `gramine`.
