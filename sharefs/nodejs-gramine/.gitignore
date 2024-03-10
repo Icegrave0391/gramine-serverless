@@ -1,1 +1,4 @@
 /OUTPUT
+*.manifest
+*.manifest.sgx
+*.sig
