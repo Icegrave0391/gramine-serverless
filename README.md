@@ -29,7 +29,7 @@ cd /share/nodejs-gramine
 ./build-all.sh
 ```
 
-**Execute workload.**
+**Ad-hoc workload execution.**
 Then, we execute workload in the following different mode:
 
 ```bash
@@ -51,10 +51,12 @@ gramine-sgx nodejs /share/nodejs-gramine/benchmarks/xxx.js
 We can directly use my provided benchmark to get runtime performance and memory (unsupported yet) overheads.
 
 ```bash
+cd /share/nodejs-gramine
 # get runtime performance overhead
-# after execution, results will be at bench-overhead.txt
+# after execution, results will be at /share/nodejs-gramine/outputs/bench-overhead.txt
 ./run-overhead.sh
 
 # get memory overhead
+# after execution, results will be at /share/nodejs-gramine/outputs/bench-memory.txt
 # unsupported yet.
 ```
