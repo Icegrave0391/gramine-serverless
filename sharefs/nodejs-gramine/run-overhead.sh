@@ -2,7 +2,7 @@
 
 BENCHMARK_DIR=/share/nodejs-gramine/benchmarks
 
-OUTPUT_FILE=/share/nodejs-gramine/bench-overhead.txt
+OUTPUT_FILE=/share/nodejs-gramine/outputs/bench-overhead.txt
 
 echo "" > $OUTPUT_FILE
 for js_file in $BENCHMARK_DIR/*.js; do
