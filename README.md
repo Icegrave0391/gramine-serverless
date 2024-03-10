@@ -22,7 +22,7 @@ After this, a prompt inside the container environment at `/share` will pop up.
 
 Inside the container, please enter `/share/nodejs-gramine`. 
 
-**Build gramine-enabled nodejs.**
+**(MUST DO!) Build gramine-enabled nodejs.**
 First, we build the manifest of gramine libOS-enabled nodejs.
 ```bash
 cd /share/nodejs-gramine
