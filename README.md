@@ -29,7 +29,7 @@ cd /share/nodejs-gramine
 ./build-all.sh
 ```
 
-**Execute workload.**
+**Ad-hoc workload execution.**
 Then, we execute workload in the following different mode:
 
 ```bash
