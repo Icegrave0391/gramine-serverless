@@ -16,8 +16,8 @@ This repo is to test the performance overhead of using SGX & libOS ([gramine](ht
 ./dockerstart.sh
 ```
 
-After this, a prompt inside the container environment will pop up.
+After this, a prompt inside the container environment at `/share` will pop up.
 
 3. Execute workloads.
 
-Refer to [sharefs/nodejs-gramine](sharefs/nodejs-gramine).
+Inside the container, please enter `/share/nodejs-gramine`. Then, refer to [sharefs/nodejs-gramine](sharefs/nodejs-gramine).
