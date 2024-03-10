@@ -1,6 +1,6 @@
 [loader]
 entrypoint = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so"
-log_level = "error"
+log_level = "none"
 insecure__use_cmdline_argv = true
 insecure__use_host_env = true
 
@@ -26,11 +26,11 @@ mounts = [
 enclave_size = "2G"
 max_threads = 32
 edmm_enable = false
+debug = true
+enable_stats = true
 isvprodid = 0
 isvsvn = 0
 remote_attestation = "none"
-debug = false
-enable_stats = false
 use_exinfo = false
 
 [[sgx.trusted_files]]
@@ -17239,7 +17239,7 @@ sha256 = "28b521f6f34e989c0a3baedb4d6a0ff7554e3925d5b99978c0bf10d8c02567b3"
 
 [[sgx.trusted_files]]
 uri = "file:/share/nodejs-gramine/Makefile"
-sha256 = "71acff6f8ae5d1dd41e935336b542f5f60e4c913c07b395271d5cc3e81c57fe8"
+sha256 = "032a48cd365df85cbedf1b2951fc90dfd3887160ae04dda283a54eeab7ab0f2e"
 
 [[sgx.trusted_files]]
 uri = "file:/share/nodejs-gramine/benchmarks/3d-cube.js"
@@ -17350,12 +17350,19 @@ uri = "file:/share/nodejs-gramine/benchmarks/useless.js"
 sha256 = "f3223d1d8f4489b57e3d75f219568a98fbb4c3038412ea67bc7d10c3e4539833"
 
 [[sgx.trusted_files]]
+uri = "file:/share/nodejs-gramine/build-all.sh"
+sha256 = "96853839a722706bfeb030fd73fdb4ce42a43230a465ee110613123996c6be1b"
+
+[[sgx.trusted_files]]
 uri = "file:/share/nodejs-gramine/nodejs.manifest"
-sha256 = "46b7b0eb26b0645cc1bc614d408a48a8820eff99eb53ab9e5c7b54abcc5f8303"
+sha256 = "1c6f50cc436d9f509e8e7dbbbaa429b45aa6523c38fb994b97bdefd17c39c3ae"
 
 [[sgx.trusted_files]]
 uri = "file:/share/nodejs-gramine/nodejs.manifest.template"
-sha256 = "e07a2ef12d7419103fc210794e193aefbd9d731c1d9183708676a0359dc3ccb4"
+sha256 = "9be9f456250d090ec7ddeb7761b5729972587f215dc86840ceb8cb92e2488889"
+
+[sgx.profile]
+enable = "all"
 
 [sgx.cpu_features]
 avx = "unspecified"

@@ -9,7 +9,7 @@ ARCH_LIBDIR ?= /lib/$(shell $(CC) -dumpmachine)
 ifeq ($(DEBUG),1)
 GRAMINE_LOG_LEVEL = debug
 else
-GRAMINE_LOG_LEVEL = error
+GRAMINE_LOG_LEVEL = none #error
 endif
 
 .PHONY: all
@@ -44,12 +44,6 @@ GRAMINE = gramine-direct
 else
 GRAMINE = gramine-sgx
 endif
-
-.PHONY: check
-check: all
-	$(GRAMINE) ./nodejs useless.js > OUTPUT
-	@grep -q "Hello World" OUTPUT && echo "[ Success 1/1 ]"
-	@rm OUTPUT
 
 .PHONY: clean
 clean:

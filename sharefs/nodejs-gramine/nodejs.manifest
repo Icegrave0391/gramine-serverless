@@ -1,6 +1,6 @@
 [loader]
 entrypoint = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so"
-log_level = "error"
+log_level = "none"
 insecure__use_cmdline_argv = true
 insecure__use_host_env = true
 
@@ -26,6 +26,8 @@ mounts = [
 enclave_size = "2G"
 max_threads = 32
 edmm_enable = false
+debug = true
+enable_stats = true
 trusted_files = [
     { uri = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so" },
     { uri = "file:/usr/bin/nodejs" },
@@ -38,9 +40,10 @@ trusted_files = [
 isvprodid = 0
 isvsvn = 0
 remote_attestation = "none"
-debug = false
-enable_stats = false
 use_exinfo = false
+
+[sgx.profile]
+enable = "all"
 
 [sgx.cpu_features]
 avx = "unspecified"
