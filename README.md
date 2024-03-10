@@ -20,4 +20,4 @@ After this, a prompt inside the container environment will pop up.
 
 3. Execute workloads.
 
-Refer to `[sharefs/nodejs-gramine](sharefs/nodejs-gramine)`.
+Refer to [sharefs/nodejs-gramine](sharefs/nodejs-gramine).
