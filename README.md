@@ -45,4 +45,16 @@ gramine-direct nodejs /share/nodejs-gramine/benchmarks/xxx.js
 gramine-sgx nodejs /share/nodejs-gramine/benchmarks/xxx.js
 ```
 
-**Note:** Please use the absoluate path of `/share/nodejs-gramine/benchmarks/xxx.js` inside container for `gramine` to execute the js workloads.
+*Note:* Please use the absoluate path of `/share/nodejs-gramine/benchmarks/xxx.js` inside container for `gramine` to execute the js workloads.
+
+**Benchmark test.**
+We can directly use my provided benchmark to get runtime performance and memory (unsupported yet) overheads.
+
+```bash
+# get runtime performance overhead
+# after execution, results will be at bench-overhead.txt
+./run-overhead.sh
+
+# get memory overhead
+# unsupported yet.
+```
