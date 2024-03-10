@@ -40,4 +40,4 @@ cd /share/nodejs-gramine
 + gramine-direct: `gramine-direct nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
 + gramine-sgx: `gramine-sgx nodejs /share/nodejs-gramine/benchmarks/xxx.js`.
 
-**Note:** Please use the absoluate path of `/share/nodejs-gramine/benchmarks/xxx.js` for `gramine`.
+**Note:** Please use the absoluate path of `/share/nodejs-gramine/benchmarks/xxx.js` inside container for `gramine` to execute the js workloads.
